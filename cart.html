@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart - Sahil Design</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #8b0000;
+    }
+
+    
+  /* Header */
+  .header {
+    background: #8b0000;
+    color: #fff;
+    padding: 15px 0;
+  }
+  .header .logo h1 {
+    font-size: 28px;
+    color: #ffd700;
+    text-transform: uppercase;
+  }
+  .header .logo span {
+    color: #fff;
+  }
+  .header nav {
+    text-align: right;
+  }
+  .header nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .header nav a:hover {
+    color: #fff;
+  }
+
+    .cart-container {
+      padding: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .cart-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-item img {
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .cart-item-details {
+      flex: 1;
+      margin-left: 20px;
+    }
+
+    .cart-item-details h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #8b0000;
+    }
+
+    .cart-item-details p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 0.9rem;
+    }
+
+    .remove-btn {
+      background-color: #8b0000;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .remove-btn:hover {
+      background-color: #ffd700;
+      color: #8b0000;
+    }
+
+    .empty-cart {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .shop-now {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #8b0000;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .shop-now:hover {
+      background-color: #ffd700;
+      color: #8b0000;
+    }
+
+    #total-container {
+      text-align: center;
+      margin-top: 20px;
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    #buy-now-container {
+      display: none;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    #buy-now-container button {
+      margin: 10px;
+      padding: 10px 20px;
+      background-color: #8b0000;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #buy-now-container button:hover {
+      background-color: #ffd700;
+      color: #8b0000;
+    }
+
+
+    /* Responsive Design */
+    @media only screen and (min-width: 220px) and (max-width: 370px) {
+      h1 {
+        font-size: 1.5rem;
+      }
+      .header .logo h1 {
+        font-size: 20px;
+      }
+      .header nav a {
+        font-size: 12px;
+        margin-right: 6px;
+      }
+      .cart-item img {
+        width: 60px;
+        height: 60px;
+      }
+      .cart-item-details h3 {
+        font-size: 1rem;
+      }
+      .cart-item-details p {
+        font-size: 0.8rem;
+      }
+      #buy-now-container button,
+      #buy-now-btn {
+        padding: 8px 16px;
+        font-size: 8px;
+      }
+    }
+
+    @media only screen and (min-width: 370px) and (max-width: 570px) {
+      h1 {
+        font-size: 1.8rem;
+      }
+      .header .logo h1 {
+        font-size: 24px;
+      }
+      .header nav a {
+        font-size: 14px;
+        margin: 5px;
+      }
+      .cart-item img {
+        width: 70px;
+        height: 70px;
+      }
+      .cart-item-details h3 {
+        font-size: 1.1rem;
+      }
+      .cart-item-details p {
+        font-size: 0.85rem;
+      }
+      #buy-now-container button,
+      #buy-now-btn {
+        padding: 10px 18px;
+        font-size: 14px;
+      }
+    }
+  </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Sahil<span>Design</span></h1>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="contact.html"><i class="fas fa-address-book"></i> Contact</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+      </nav>
+    </div>
+  </header>
+  
+
+  <h1>Your Cart</h1>
+  <div class="cart-container" id="cart-container"></div>
+  <div id="total-container"></div>
+  <div style="text-align: center; margin-top: 20px;">
+    <button id="buy-now-btn" style="padding: 10px 20px; background-color: #8b0000; color: white; border: none; border-radius: 5px; cursor: pointer;">Buy Now</button>
+  </div>
+  <div id="buy-now-container">
+    <button id="whatsapp-btn">WhatsApp</button>
+    <button id="email-btn">Email</button>
+  </div>
+
+  <script>
+    const cartContainer = document.getElementById('cart-container');
+    const totalContainer = document.getElementById('total-container');
+    const buyNowBtn = document.getElementById('buy-now-btn');
+    const buyNowContainer = document.getElementById('buy-now-container');
+
+    // Fetch cart items from localStorage
+    const cart = JSON.parse(localStorage.getItem('cart')) || [];
+    let totalPrice = 0;
+    const deliveryCharge = 150;
+
+    if (cart.length === 0) {
+      // Display empty cart message
+      cartContainer.innerHTML = `
+        <div class="empty-cart">
+          <h2>OOPS! Cart is Empty</h2>
+          <a href="products.html" class="shop-now">Shop Now</a>
+        </div>
+      `;
+    } else {
+      // Render cart items
+      cart.forEach((product, index) => {
+        const cartItem = document.createElement('div');
+        cartItem.className = 'cart-item';
+
+        cartItem.innerHTML = `
+          <img src="${product.image}" alt="${product.name}">
+          <div class="cart-item-details">
+            <h3>${product.name}</h3>
+           
+            <p>Price: ₹${product.price}</p>
+            <p>Color: ${product.color || 'Default'}</p>
+          </div>
+          <button class="remove-btn" onclick="removeFromCart(${index})">Remove</button>
+        `;
+
+        cartContainer.appendChild(cartItem);
+        totalPrice += parseInt(product.price, 10);
+      });
+
+    
+    }
+
+    // Remove item from cart
+    function removeFromCart(index) {
+      const updatedCart = cart.filter((_, i) => i !== index);
+      localStorage.setItem('cart', JSON.stringify(updatedCart));
+      location.reload(); // Refresh the cart page
+    }
+
+    // Buy Now button functionality
+    buyNowBtn.addEventListener('click', () => {
+      buyNowContainer.style.display = 'block';
+    });
+
+    // WhatsApp functionality
+    document.getElementById('whatsapp-btn').addEventListener('click', () => {
+      let message = 'I want to purchase:\n';
+      cart.forEach(product => {
+        message += `Product: ${product.name}\nPrice: ₹${product.price}\n\n`+'Please attach screenshots of the  items : \n';
+      });
+     
+      const whatsappNumber = "+918700661340";
+      const encodedMessage = encodeURIComponent(message);
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodedMessage}`, '_blank');
+    });
+
+    // Email functionality
+    document.getElementById('email-btn').addEventListener('click', () => {
+      let body = 'I want to purchase:\n';
+      cart.forEach(product => {
+        body += `Product: ${product.name}\nPrice: ₹${product.price}\n\n`;
+      });
+     
+      const subject = 'Purchase Request';
+      window.location.href = `mailto:mohdsaadamaan@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`+'Please attach screenshots of the  items : \n';
+    });
+  </script>
+</body>
+</html>

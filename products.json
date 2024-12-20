@@ -1,0 +1,251 @@
+[
+  {
+    "id": "designer_kurta",
+    "name": "Designer Kurta",
+    "description": "Elegant Black Designer Kurta \n  Step into timeless elegance with this stunning green designer kurta, crafted to perfection for any special occasion. Made from high-quality fabric, this kurta offers a perfect blend of comfort and style. The intricate embroidery details add a touch of sophistication, while the vibrant green hue brings out a refreshing charm. \n\n Fabric: Premium cotton/silk blend for a luxurious feel. \n Design: Handcrafted embroidery with modern patterns.",
+    "price": "₹1,499",
+    "images": ["image/designer_kurta1.png", "image/designer_kurta2.png", "image/designer_kurta3.png", "image/designer_kurta1.png"],
+    "colors": [
+      {
+        "id": "designer_kurta_red", 
+        "color": "Red",
+        "image": ["image/designer_red1.png","image/designer_red2.png","image/designer_red3.png","image/designer_red4.png"],
+        "price": "₹1,499",
+        "description": "Turn heads with the vibrant and timeless charm of this Red Designer Kurta, designed for men who embrace tradition with style. Its bold red color, paired with intricate detailing, makes it the perfect attire for weddings, festive gatherings, and special occasions."
+      },
+      {
+        "id": "designer_kurta_peach", 
+        "color": "Pink",
+        "image": ["image/designer_peach1.png","image/designer_peach2.png","image/designer_peach3.png","image/designer_peach4.png"],
+        "price": "₹1,599",
+        "description": "Royal Blue Designer Kurta Make a bold and elegant statement with this Royal Blue Designer Kurta, a perfect blend of tradition and modernity. Crafted with premium fabric, this kurta offers unmatched comfort while showcasing intricate craftsmanship. The rich blue hue exudes sophistication, making it ideal for any festive or formal occasion."
+      },
+      {
+        "id": "designer_kurta_black", 
+        "color": "black",
+        "image": ["image/designer_kurta1.png", "image/designer_kurta2.png", "image/designer_kurta3.png", "image/designer_kurta1.png"],
+        "price": "₹1,499",
+        "description": "Elegant Black Designer Kurta \n  Step into timeless elegance with this stunning green designer kurta, crafted to perfection for any special occasion. Made from high-quality fabric, this kurta offers a perfect blend of comfort and style. The intricate embroidery details add a touch of sophistication, while the vibrant green hue brings out a refreshing charm. \n\n Fabric: Premium cotton/silk blend for a luxurious feel. \n Design: Handcrafted embroidery with modern patterns."
+      },
+      {
+        "id": "designer_kurta_blue", 
+        "color": "Blue",
+        "image": ["image/designer_blue1.png","image/designer_blue2.png"],
+        "price": "₹1,699",
+        "description": "Exude elegance and sophistication with this Blue Designer Kurta, a perfect blend of tradition and contemporary style. The rich royal blue hue and intricate craftsmanship make it a must-have for festive occasions and celebrations."
+      }
+    ]
+  },
+  {
+    "id": "silk_saree",
+    "name": "Silk Saree",
+    "description": "A luxurious silk saree for weddings and festivals.",
+    "price": "₹3,999",
+    "images": ["image/saree1.png", "image/saree2.png", "image/saree3.png", "image/saree4.png"],
+    "colors": [
+      {
+        "id": "silk_saree_black",
+        "color": "Black",
+        "image": ["image/saree_black1.png", "image/saree_black2.png","image/saree4.png","image/saree_black3.png"],
+        "price": "₹3,999",
+        "description": "Elegant black silk saree"
+      },
+      {
+        "id": "silk_saree_blue",
+        "color": "Blue",
+        "image": ["image/saree_blue1.png", "image/saree_blue2.png","image/saree4.png"],
+        "price": "₹4,199",
+        "description": "Stunning blue silk saree"
+      },
+      {
+        "id": "silk_saree_green",
+        "color": "Green",
+        "image": ["image/saree1.png","image/saree4.png","image/saree2.png","image/saree2.png"],
+        "price": "₹3,999",
+        "description": "Luxurious gold silk saree"
+      },
+      {
+        "id": "silk_saree_pink",
+        "color": "Pink",
+        "image": ["image/saree_pink1.png","image/saree_pink2.png","image/saree4.png","image/saree_pink3.png"],
+        "price": "₹4,099",
+        "description": "Beautiful pink silk saree"
+      }
+    ]
+  },
+{
+  "id": "lehengha",
+  "name": "Traditional Lehengha",
+  "description": "A luxurious silk saree for weddings and festivals.",
+  "price": "₹5,999",
+  "images": ["image/lehengha1.png", "image/lehengha2.png", "image/lehengha3.png", "image/lehengha4.png"],
+  "colors": [
+    {
+      "id": "lehengha_red",
+      "color": "Red",
+      "image": ["image/lehengha1.png", "image/lehengha2.png", "image/lehengha3.png", "image/lehengha4.png"],
+      "price": "₹3,999",
+      "description": "Elegant red Lehengha "
+    },
+    {
+      "id": "lehengha_blue",
+      "color": "Blue",
+      "image": ["image/lehengha_blue1.png", "image/lehengha_blue2.png","image/lehengha_blue3.png","image/lehengha_blue4.png"],
+      "price": "₹4,199",
+      "description": "Stunning blue silk Lehengha"
+    },
+    {
+      "id": "lehengha_green",
+      "color": "Green",
+      "image": ["image/lehengha_green1.png","image/lehengha_green2.png","image/lehengha_green3.png","image/lehengha_green4.png"],
+      "price": "₹3,999",
+      "description": "Luxurious green silk lahengha"
+    },
+    {
+      "id": "lehengha_pink",
+      "color": "Pink",
+      "image": ["image/lehengha_pink1.png","image/lehengha_pink2.png","image/lehengha_pink3.png","image/lehengha_pink4.png"],
+      "price": "₹4,099",
+      "description": "Beautiful pink silk saree"
+    }
+  ]
+},
+
+{
+  "id": "tshirt",
+  "name": "Comfort T-shirt",
+  "description": "A luxurious silk tshirt for weddings and festivals.",
+  "price": "₹1,999",
+  "images": ["image/tshirt_black.png"],
+  "colors": [
+    {
+      "id": "tshirt_red",
+      "color": "Red",
+      "image": ["image/tshirt_red.png"],
+      "price": "₹2,199",
+      "description": "Elegant red Tshirt  "
+    },
+    {
+      "id": "tshirt_black",
+      "color": "Black",
+      "image": ["image/tshirt_black.png"],
+      "price": "₹1,000",
+      "description": "Stunning blue silk Tshirt"
+    },
+    {
+      "id": "tshirt_green",
+      "color": "Green",
+      "image": ["image/tshirt_green.png"],
+      "price": "₹1,109",
+      "description": "Luxurious green silk Tshirt"
+    },
+    {
+      "id": "tshirt_yellow",
+      "color": "Yellow",
+      "image": ["image/tshirt_yellow.png"],
+      "price": "₹1,099",
+      "description": "Beautiful pink silk Tshirt"
+    }
+  ]
+},
+{
+  "id": "denim_jeans",
+  "name": "Denim Jeans",
+  "description": "A luxurious silk tshirt for weddings and festivals.",
+  "price": "₹2,199",
+  "images": ["image/denim1.png","image/denim2.png","image/denim3.png","image/denim4.png"],
+  "colors": [
+    {
+      "id": "denim_jeans_blue",
+      "color": "Blue",
+      "image": ["image/denim1.png","image/denim2.png","image/denim3.png","image/denim4.png"],
+      "price": "₹2,199",
+      "description": "Elegant Denim Jeans"
+    },
+    {
+      "id": "denim_jeans_black",
+      "color": "Black",
+      "image": ["image/denim_blk1.png","image/denim_bkl2.png","image/denim_blk3.png"],
+      "price": "₹3,000",
+      "description": "Stunning Denim Jeans"
+    }
+  ]
+},
+{
+  "id": "shirt",
+  "name": "Formal Shirt",
+  "description": "A luxurious silk tshirt for weddings and festivals.",
+  "price": "₹1,999",
+  "images": ["image/shirt1.png","image/shirt2.png","image/shirt3.png"],
+  "colors": [
+    {
+      "id": "shirt_voilet",
+      "color": "purple",
+      "image": ["image/shirt1.png","image/shirt2.png","image/shirt3.png"],
+      "price": "₹2,199",
+      "description": "Elegant shirt  "
+    },
+    {
+      "id": "shirt_black",
+      "color": "Black",
+      "image": ["image/shirtbl1.png","image/shirtbl2.png","image/shirtbl3.png"],
+      "price": "₹1,000",
+      "description": "Stunning  silk shirt"
+    },
+    {
+      "id": "shirt_white",
+      "color": "White",
+      "image": ["image/shirtwh1.png","image/shirtwh2.png","image/shirtwh3.png"],
+      "price": "₹1,109",
+      "description": "Luxurious white silk shirt"
+    }
+  ]
+},
+{
+  "id": "sherwani",
+  "name": "Royal Sherwani",
+  "description": "A luxurious silk sherwani for wedding.",
+  "price": "₹10,999",
+  "images": ["image/sherwani1.png","image/sherwani2.png","image/sherwani3.png"],
+  "colors": [
+    {
+      "id": "sherwani_white",
+      "color": "White",
+      "image": ["image/sherwani1.png","image/sherwani2.png","image/sherwani3.png"],
+      "price": "₹10,999",
+      "description": "A luxurious silk sherwani for wedding  "
+    }
+  ]
+},
+{
+  "id": "bridal",
+  "name": "Bridal Lahnega",
+  "description": "A luxurious silk lahenga for wedding.",
+  "price": "₹12,999",
+  "images": ["image/bridal1.png","image/bridal2.png","image/bridal3.png"],
+  "colors": [
+    {
+      "id": "sherwani_red",
+      "color": "Red",
+      "image": ["image/bridal1.png","image/bridal2.png"],
+      "price": "₹12,999",
+      "description": "A luxurious silk sherwani for wedding  "
+    }
+  ]
+},{
+  "id": "suit",
+  "name": "Wedding Suit",
+  "description": "A luxurious silk suit for wedding.",
+  "price": "₹10,999",
+  "images": ["image/suit1.png","image/Suit2.png","image/suit3.png"],
+  "colors": [
+    {
+      "id": "sherwani_black",
+      "color": "Black",
+      "image": ["image/suit1.png","image/Suit2.png","image/suit3.png"],
+      "price": "₹10,999",
+      "description": "A luxurious silk suit for wedding  "
+    }
+  ]
+}
+]

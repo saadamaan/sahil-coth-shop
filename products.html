@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sahil Design - Products</title>
+  
+  <style>
+    /* General Styles */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f8f8f8;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      text-align: center;
+      color: #8b0000;
+    }
+
+    h1 span {
+      color: #ffd700;
+    }
+
+    
+  /* Header */
+  .header {
+    background: #8b0000;
+    color: #fff;
+    padding: 15px 0;
+  }
+  .header .logo h1 {
+    font-size: 28px;
+    color: #ffd700;
+    text-transform: uppercase;
+  }
+  .header .logo span {
+    color: #fff;
+  }
+  .header nav {
+    text-align: right;
+    margin-right: 10px;
+  }
+  .header nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .header nav a:hover {
+    color: #fff;
+  }
+
+    /* Products Section */
+    .products {
+      padding: 20px;
+    }
+
+    .products h2 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+    }
+
+    /* Category */
+    .category {
+      margin-bottom: 40px;
+    }
+
+    .category h3 {
+      font-size: 1.8rem;
+      margin-bottom: 10px;
+    }
+
+    .items {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      flex: 1;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .item img {
+      width: 100%;
+      max-height: 200px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+
+    .item h4 {
+      font-size: 1.2rem;
+      margin: 10px 0;
+    }
+
+    .item p {
+      font-size: 1rem;
+      color: #8b0000;
+      font-weight: bold;
+    }
+    .items {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 30%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .items img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .items h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+    /* Footer */
+    footer {
+      text-align: center;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 0;
+      margin-top: 20px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media only screen and (min-width: 220px) and (max-width: 370px) {
+      .header .logo h1 {
+        font-size: 18px; /* Smaller font size for smaller screens */
+      }
+
+      .header nav a {
+        font-size: 12px;
+        margin-left: 8px;
+      }
+
+      .products h2 {
+        font-size: 1.5rem;
+      }
+
+      .items {
+        flex-direction: column; /* Stack items vertically */
+        gap: 10px;
+      }
+
+      .item {
+        max-width: 9cm; /* Max width for smaller screens */
+        margin: 0 auto;
+      }
+
+      .item img {
+        height: 150px; /* Smaller images */
+      }
+
+      .item h4 {
+        font-size: 1rem;
+      }
+
+      .item p {
+        font-size: 0.9rem;
+      }
+    }
+
+    @media only screen and (min-width: 370px) and (max-width: 570px) {
+      .header .logo h1 {
+        font-size: 22px; /* Slightly larger for medium-small screens */
+      }
+
+      .header nav a {
+        font-size: 14px;
+        margin-left: 10px;
+      }
+
+
+      .products h2 {
+        font-size: 1.8rem;
+      }
+
+      .items {
+        flex-direction: row; /* Items in a row */
+        justify-content: space-between;
+      }
+
+      .item {
+        max-width: 48%; /* 2 items per row */
+      }
+
+      .item img {
+        height: 180px; /* Adjusted image size */
+      }
+
+      .item h4 {
+        font-size: 1.1rem;
+      }
+
+      .item p {
+        font-size: 1rem;
+      }
+    }
+
+
+  </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Sahil<span>Design</span></h1>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="contact.html"><i class="fas fa-address-book"></i> Contact</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Products Section -->
+  <section class="products">
+    <h2>Our Exclusive Collections</h2>
+
+    <!-- Ethnic Wear Section -->
+    <div id="ethnic" class="category">
+      <h3>Ethnic Wear</h3>
+      <div class="items">
+        <div class="item">
+          <a href="template.html?product=designer_kurta">
+            <img src="image/designer_kurta1.png" alt="Designer Kurta">
+            <h4>Designer Kurta</h4>
+          </a>
+          <p>Price: ₹1,499</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=silk_saree">
+            <img src="image/saree1.png" alt="Silk Saree">
+            <h4>Silk Saree</h4>
+          </a>
+          <p>Price: ₹3,999</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=lehengha">
+            <img src="image/lehengha1.png" alt="Lehengha">
+            <h4>Traditional Lehengha</h4>
+          </a>
+          <p>Price: ₹5,499</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Casual Wear Section -->
+    <div id="casual" class="category">
+      <h3>Casual Wear</h3>
+      <div class="items">
+        <div class="item">
+          <a href="template.html?product=tshirt">
+            <img src="image/tshirt_black.png" alt="Tshirt">
+            <h4>Comfort T-Shirt</h4>
+          </a>
+          <p>Price: ₹899</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=denim_jeans">
+            <img src="image/denim1.png" alt="Denim Jeans">
+            <h4>Denim Jeans</h4>
+          </a>
+          <p>Price: ₹2,199</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=shirt">
+            <img src="image/shirt1.png" alt="Shirt">
+            <h4>Formal Shirt</h4>
+          </a>
+          <p>Price: ₹999</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Wedding Collection Section -->
+    <div id="wedding" class="category">
+      <h3>Wedding Collection</h3>
+      <div class="items">
+        <div class="item">
+          <a href="template.html?product=sherwani">
+            <img src="image/sherwani1.png" alt="Sherwani">
+            <h4>Royal Sherwani</h4>
+          </a>
+          <p>Price: ₹10,999</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=bridal">
+            <img src="image/bridal1.png" alt="Bridal">
+            <h4>Bridal Lehenga</h4>
+          </a>
+          <p>Price: ₹12,999</p>
+        </div>
+        <div class="item">
+          <a href="template.html?product=suit">
+            <img src="image/suit1.png" alt="Suit">
+            <h4>Wedding Suit</h4>
+          </a>
+          <p>Price: ₹8,499</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 Sahil Design. All rights reserved.</p>
+  </footer>
+
+  <script>
+   
+  fetch('products.json')
+    .then(response => response.json())
+    .then(data => {
+      const productsContainer = document.querySelector('.products');
+
+      data.products.forEach(product => {
+        const productElement = document.createElement('div');
+        productElement.classList.add('category');
+        productElement.innerHTML = `
+          <h3>${product.category}</h3>
+          <div class="items">
+            ${product.colors.map(color => `
+              <div class="item">
+                <a href="template.html?product=${product.id}&color=${color.color}">
+                  <img src="${color.images[0]}" alt="${product.name} - ${color.color}">
+                  <h4>${product.name} (${color.color})</h4>
+                </a>
+                <p>Price: ${product.price}</p>
+              </div>
+            `).join('')}
+          </div>
+        `;
+        productsContainer.appendChild(productElement);
+      });
+    })
+    .catch(error => console.error('Error loading product data:', error));
+
+
+  </script>
+</body>
+</html>

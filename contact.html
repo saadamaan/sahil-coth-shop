@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f8f8f8;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      color: #8b0000;
+      margin-top: 20px;
+    }
+
+    
+  /* Header */
+  .header {
+    background: #8b0000;
+    color: #fff;
+    padding: 15px 0;
+  }
+  .header .logo h1 {
+    font-size: 28px;
+    color: #ffd700;
+    text-transform: uppercase;
+  }
+  .header .logo span {
+    color: #fff;
+  }
+  .header nav {
+    text-align: right;
+  }
+  .header nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 16px;
+  }
+  .header nav a:hover {
+    color: #fff;
+  }
+
+    .contact-container {
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+    }
+
+    .contact-details {
+      margin-bottom: 20px;
+    }
+
+    .contact-details h3 {
+      margin-bottom: 10px;
+      color: #8b0000;
+    }
+
+    .contact-details p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      border: 0;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+    }
+
+    .footer a {
+      color: #8b0000;
+      text-decoration: none;
+    }
+
+    .footer a:hover {
+      color: #ffd700;
+    }
+
+    /* For very small screens (220px to 370px) */
+@media only screen and (min-width: 220px) and (max-width: 370px) {
+  body {
+    font-size: 12px;
+  }
+
+  .header {
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .header .logo h1 {
+    font-size: 20px;
+  }
+
+  .header nav a {
+    font-size: 12px;
+    margin-right: 6px;
+  }
+
+  .contact-container {
+    padding: 15px;
+  }
+
+  iframe {
+    height: 300px;
+  }
+}
+
+/* For small to medium screens (370px to 570px) */
+@media only screen and (min-width: 370px) and (max-width: 570px) {
+  body {
+    font-size: 14px;
+  }
+
+  .header {
+    padding: 12px 0;
+  }
+
+  .header .logo h1 {
+    font-size: 22px;
+  }
+
+  .header nav a {
+    font-size: 14px;
+    margin-left: 10px;
+  }
+
+  .contact-container {
+    padding: 20px;
+  }
+
+  iframe {
+    height: 350px;
+  }
+}
+
+  </style>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="logo">
+        <h1>Sahil<span>Design</span></h1>
+      </div>
+      <nav>
+        <a href="index.html"><i class="fas fa-home"></i> Home</a>
+        <a href="products.html"><i class="fas fa-box"></i> Products</a>
+        <a href="contact.html"><i class="fas fa-address-book"></i> Contact</a>
+        <a href="cart.html"><i class="fas fa-shopping-cart"></i> Cart</a>
+      </nav>
+    </div>
+  </header>
+  
+  <h1>Contact Us</h1>
+
+  <div class="contact-container">
+    <!-- Contact Details -->
+    <div class="contact-details">
+      <h3>Our Location:</h3>
+      <p> Menna Bazar , Jama Masjid, Delhi</p>
+
+      <h3>Email:</h3>
+      <p>mohdsaadamaan@gmail.com</p>
+
+      <h3>Phone:</h3>
+      <p>+91 8700661340</p>
+    </div>
+
+    <!-- Embedded Google Map -->
+    <iframe
+    class="map-iframe"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4482.563899689877!2d77.23542152305274!3d28.65181049257831!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd2dba81a9a7%3A0x93cf8b9f15ff8b5d!2sMeena%20Bazaar%2C%20Jama%20Masjid%2C%20Chandni%20Chowk%2C%20Delhi%2C%20110006!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+  </div>
+
+  <div class="footer">
+    <p>Powered by <a href="https://www.google.com/maps" target="_blank">Google Maps</a></p>
+  </div>
+</body>
+</html>

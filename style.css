@@ -1,0 +1,251 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+  }
+  .container {
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  /* Header */
+  .header {
+    background: #8b0000;
+    color: #fff;
+    padding: 15px 0;
+  }
+  .header .logo h1 {
+    font-size: 28px;
+    color: #ffd700;
+    text-transform: uppercase;
+  }
+  .header .logo span {
+    color: #fff;
+  }
+  .header nav {
+    text-align: right;
+  }
+  .header nav a {
+    color: #ffd700;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+  }
+  .header nav a:hover {
+    color: #fff;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('images/hero-india.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+  }
+  .hero-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .hero-content .btn {
+    display: inline-block;
+    background: #ffd700;
+    color: #8b0000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  .hero-content .btn:hover {
+    background: #ffc107;
+  }
+  
+  /* Categories Section */
+  .categories {
+    text-align: center;
+    padding: 50px 0;
+    background: #f9f9f9;
+  }
+  .categories h3 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .category-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .category {
+    margin: 10px;
+    text-align: center;
+  }
+  .category img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .category h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  /* Featured Products */
+  .featured-products {
+    padding: 50px 0;
+    background: #fff;
+  }
+  .featured-products h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+  }
+  .product-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .product {
+    text-align: center;
+    margin: 10px;
+    flex: 0 0 30%;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .product img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .product h4 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+  }
+  .product p {
+    margin-top: 5px;
+    font-size: 1rem;
+    color: #8b0000;
+    font-weight: bold;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+
+  @media only screen and (min-width: 320px) and (max-width: 590px) {
+    .header .logo h1 {
+      font-size: 24px; /* Even smaller font for mobile screens */
+    }
+  
+    .header .logo span {
+      font-size: 14px; /* Even smaller font for mobile slogan */
+    }
+  
+    .header nav a {
+      font-size: 14px; /* Adjust font size for smaller screens */
+      margin-top: 8px; /* Adjust spacing between navigation links */
+    }
+  
+  
+    .categories h3 {
+      font-size: 1.8rem;
+    }
+    .category-list {
+      flex-direction: column;
+    }
+    .category img {
+      width: 180px;
+      height: 180px;
+    }
+    .category h4 {
+      font-size: 1.2rem;
+    }
+  
+    .featured-products h3 {
+      font-size: 1.8rem;
+    }
+    .product {
+      flex: 0 0 45%;
+      margin: 10px 0;
+    }
+    .product img {
+      width: 200px;
+      height: 200px;
+    }
+    .product h4 {
+      font-size: 1.2rem;
+    }
+    .product p {
+      font-size: 1rem;
+    }
+  }
+  
+  @media only screen and (min-width: 220px) and (max-width: 370px) {
+    .header .logo h1 {
+      font-size: 20px;
+    }
+    .header nav a {
+      font-size: 14px;
+      margin-left: 5px;
+    }
+  
+    .hero {
+      padding: 60px 20px;
+    }
+    .hero-content h2 {
+      font-size: 1.8rem;
+    }
+    .hero-content p {
+      font-size: 0.9rem;
+    }
+  
+    .categories h3 {
+      font-size: 1.5rem;
+    }
+    .category img {
+      width: 150px;
+      height: 150px;
+    }
+    .category h4 {
+      font-size: 1rem;
+    }
+  
+    .featured-products h3 {
+      font-size: 1.5rem;
+    }
+    .product {
+      flex: 0 0 100%;
+    }
+    .product img {
+      width: 180px;
+      height: 180px;
+    }
+    .product h4 {
+      font-size: 1rem;
+    }
+    .product p {
+      font-size: 0.9rem;
+    }
+  }
+    
+  
